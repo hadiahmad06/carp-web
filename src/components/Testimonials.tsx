@@ -16,26 +16,26 @@ const testimonials: Testimonial[] = [
   {
     id: 1,
     content: "Carp has been a game-changer for my daily commute to campus. I've saved over $200 a month on gas and parking, plus made some great friends along the way!",
-    name: "Alex Johnson",
-    role: "Engineering Student",
+    name: "Bruce Chen",
+    role: "Computer Science Student",
     rating: 5,
-    avatarUrl: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+    avatarUrl: "https://media.licdn.com/dms/image/v2/D5603AQFoLnHC1fsqjQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1720151833611?e=2147483647&v=beta&t=Kd4Sjq2G6aRIX7PwCAnu14fsTveFZuUlxaus7Is2Lho"
   },
   {
     id: 2,
-    content: "As someone who was always anxious about ridesharing, Carp's security features gave me peace of mind. The verification system and in-app tracking make me feel completely safe.",
-    name: "Mia Williams",
-    role: "Business Major",
+    content: "The flexibility of the app is incredible. Whether I need a ride at 8 AM or 8 PM, there's always someone headed my way. The scheduling feature makes planning my week so much easier.",
+    name: "Hadi Ahmad",
+    role: "Junior at University of Minnesota",
     rating: 5,
-    avatarUrl: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+    avatarUrl: "https://media.licdn.com/dms/image/v2/D5603AQEX9KIMw7BTqg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1715500002167?e=2147483647&v=beta&t=N1mwXiw1owAkS3Aci-BdE9Gbslr41iS7xfRkMDMOQlI"
   },
   {
     id: 3,
-    content: "The flexibility of the app is incredible. Whether I need a ride at 8 AM or 8 PM, there's always someone headed my way. The scheduling feature makes planning my week so much easier.",
-    name: "David Chen",
-    role: "Computer Science Student",
-    rating: 4,
-    avatarUrl: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+    content: "As someone who was always anxious about ridesharing, Carp's security features gave me peace of mind. The verification system and in-app tracking make me feel completely safe.",
+    name: "Dhruv Gupta",
+    role: "CS Student at Georgia Tech",
+    rating: 5,
+    avatarUrl: "https://media.licdn.com/dms/image/v2/D5603AQEwBFVrKBAq-w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1718302868006?e=2147483647&v=beta&t=-8YsJMz-bcouGiRLwq71KmvZXp9dUgqsEVHfi-KXQ0A"
   }
 ];
 
