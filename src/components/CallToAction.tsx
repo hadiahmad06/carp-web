@@ -33,6 +33,7 @@ const CallToAction = () => {
   return (
     <section 
       ref={sectionRef}
+      id="download"
       className="py-24 px-6 relative overflow-hidden"
     >
       <div 

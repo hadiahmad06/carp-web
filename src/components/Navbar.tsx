@@ -26,6 +26,11 @@ const Navbar = () => {
     }
   };
 
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+    document.body.style.overflow = 'auto';
+  };
+
   return (
     <header
       className={cn(
@@ -77,6 +82,7 @@ const Navbar = () => {
           </Button>
           <Button 
             className="font-medium bg-carp-blue hover:bg-carp-blue/90 text-white"
+            onClick={() => document.getElementById('download')?.scrollIntoView({ behavior: 'smooth' })}
           >
             Download
           </Button>
@@ -107,7 +113,7 @@ const Navbar = () => {
                 key={item}
                 href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}
                 className="font-medium text-2xl text-foreground"
-                onClick={toggleMobileMenu}
+                onClick={closeMobileMenu}
               >
                 {item}
               </a>
@@ -121,6 +127,10 @@ const Navbar = () => {
               </Button>
               <Button 
                 className="font-medium text-lg w-48 bg-carp-blue hover:bg-carp-blue/90 text-white"
+                onClick={() => {
+                  closeMobileMenu();
+                  document.getElementById('download')?.scrollIntoView({ behavior: 'smooth' });
+                }}
               >
                 Download
               </Button>

@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { User, MapPin, Car } from 'lucide-react';
@@ -50,6 +49,7 @@ const Hero = () => {
               <Button 
                 size="lg" 
                 className="w-full sm:w-auto bg-carp-blue hover:bg-carp-blue/90 text-white"
+                onClick={() => document.getElementById('download')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Download App
               </Button>
