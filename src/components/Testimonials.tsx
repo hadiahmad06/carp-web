@@ -23,7 +23,7 @@ const testimonials: Testimonial[] = [
   },
   {
     id: 2,
-    content: "The flexibility of the app is incredible. Whether I need a ride at 8 AM or 8 PM, there's always someone headed my way. The scheduling feature makes planning my week so much easier.",
+    content: "The flexibility of the app is incredible. Whether I need a ride at 8 AM or 8 PM, there's always someone headed the same way I am. The scheduling feature makes planning my week so much easier.",
     name: "Hadi Ahmad",
     role: "Junior at University of Minnesota",
     rating: 5,
@@ -31,7 +31,7 @@ const testimonials: Testimonial[] = [
   },
   {
     id: 3,
-    content: "As someone who was always anxious about ridesharing, Carp's security features gave me peace of mind. The verification system and in-app tracking make me feel completely safe.",
+    content: "Found my boyfriend on this app!!!",
     name: "Dhruv Gupta",
     role: "CS Student at Georgia Tech",
     rating: 5,

@@ -2,6 +2,7 @@
 import { useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { User, MapPin, Car } from 'lucide-react';
+import { FloatingUI, FloatingUIContainer } from '@/components/ui/floating-ui';
 
 const Hero = () => {
   const parallaxRef = useRef<HTMLDivElement>(null);
@@ -77,7 +78,6 @@ const Hero = () => {
               </div>
             </div>
           </div>
-
           {/* Right column / Visual content */}
           <div className="w-full lg:w-1/2 relative">
             <div className="relative flex justify-center lg:justify-end">
@@ -157,39 +157,65 @@ const Hero = () => {
                       </div>
                     ))}
                   </div>
+                  
                 </div>
+                
               </div>
-              
               {/* Floating UI elements */}
-              <div className="absolute top-[20%] -left-4 animate-float" style={{ animationDelay: '400ms' }}>
-                <div className="glass-effect p-4 rounded-xl shadow-md">
-                  <div className="flex items-center">
-                    <div className="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center">
-                      <span className="text-green-600 text-xs">+</span>
-                    </div>
-                    <div className="ml-2">
-                      <div className="font-medium text-sm">Save $240/month</div>
-                      <div className="text-2xs text-muted-foreground">on average with carpooling</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="absolute bottom-[25%] -right-4 animate-float" style={{ animationDelay: '600ms', animationDuration: '5s' }}>
-                <div className="glass-effect p-4 rounded-xl shadow-md">
-                  <div className="flex items-center">
-                    <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
-                      <span className="text-carp-blue text-xs">★</span>
-                    </div>
-                    <div className="ml-2">
-                      <div className="font-medium text-sm">4.9 / 5.0</div>
-                      <div className="text-2xs text-muted-foreground">average rider rating</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <FloatingUIContainer position="center" xOffset="-125%" yOffset="-20vh">
+                <FloatingUI
+                  title="Save $240/month"
+                  text="on average with carpooling"
+                  icon="💸"
+                  bgColor="bg-yellow-100"
+                  textColor="text-yellow-600"
+                  animationDelay="400ms"
+                  animationDuration="3s"
+                  xOffset='-5px'
+                />
+                <FloatingUI
+                  title="Cut emissions by 50%"
+                  text="when you ride with one other person"
+                  icon="💨"
+                  bgColor="bg-gray-100"
+                  textColor="text-gray-600"
+                  animationDelay="400ms"
+                  animationDuration="3s"
+                  xOffset='5px'
+                />
+                <FloatingUI
+                  title="Help the environment"
+                  text="by reducing the number of cars on the road"
+                  icon="🌍"
+                  bgColor="bg-green-200"
+                  textColor="text-green-800"
+                  animationDelay="600ms"
+                  animationDuration="3s"
+                  xOffset='5px'
+                />
+                <FloatingUI
+                  title="Meet new people"
+                  text="while reducing your commute stress"
+                  icon="🚗"
+                  bgColor="bg-blue-100"
+                  textColor="text-blue-600"
+                  animationDelay="500ms"
+                  animationDuration="2.5s"
+                />
+                <FloatingUI
+                  title="Be more productive"
+                  text="by sharing your commute time"
+                  icon="📈"
+                  bgColor="bg-purple-100"
+                  textColor="text-purple-600"
+                  animationDelay="800ms"
+                  animationDuration="2s"
+                />
+              </FloatingUIContainer>
             </div>
+            
           </div>
+          
         </div>
       </div>
     </section>

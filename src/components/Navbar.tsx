@@ -43,7 +43,7 @@ const Navbar = () => {
               "font-semibold text-2xl transition-colors",
               isScrolled ? "text-foreground" : "text-foreground"
             )}>
-              carp
+              Carp
             </span>
           </div>
         </a>
