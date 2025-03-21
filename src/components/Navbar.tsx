@@ -1,14 +1,18 @@
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isFeatureMenuOpen, setIsFeatureMenuOpen] = useState(false);
+  const featureMenuRef = useRef<HTMLDivElement>(null);
+  const featureButtonRef = useRef<HTMLButtonElement>(null);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,6 +21,23 @@ const Navbar = () => {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    // Handle clicks outside the feature menu to close it
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        featureMenuRef.current && 
+        featureButtonRef.current && 
+        !featureMenuRef.current.contains(event.target as Node) && 
+        !featureButtonRef.current.contains(event.target as Node)
+      ) {
+        setIsFeatureMenuOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
   const toggleMobileMenu = () => {
@@ -62,13 +83,13 @@ const Navbar = () => {
         <nav className="hidden md:flex items-center space-x-8">
           <div className="relative">
             <button
+              ref={featureButtonRef}
               className={cn(
                 "font-medium transition-colors link-underline flex items-center gap-1",
                 isScrolled ? "text-foreground" : "text-foreground"
               )}
               onClick={toggleFeatureMenu}
               onMouseEnter={() => setIsFeatureMenuOpen(true)}
-              onMouseLeave={() => setIsFeatureMenuOpen(false)}
             >
               Features
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -76,6 +97,7 @@ const Navbar = () => {
               </svg>
             </button>
             <div 
+              ref={featureMenuRef}
               className={`absolute left-0 mt-2 w-64 rounded-lg glass-effect p-4 shadow-lg transition-all duration-200 ${isFeatureMenuOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-2 pointer-events-none'}`}
               onMouseEnter={() => setIsFeatureMenuOpen(true)}
               onMouseLeave={() => setIsFeatureMenuOpen(false)}

@@ -1,18 +1,21 @@
 
 import { useEffect, useRef } from 'react';
 import { Users, Shield, MapPin, MessageSquare } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const FeatureCard = ({ 
   title, 
   description, 
   icon: Icon,
   color,
+  linkTo,
   delay = 0
 }: { 
   title: string; 
   description: string; 
   icon: React.ElementType;
   color: string;
+  linkTo: string;
   delay?: number;
 }) => {
   const cardRef = useRef<HTMLDivElement>(null);
@@ -52,12 +55,12 @@ const FeatureCard = ({
       <p className="text-muted-foreground text-sm leading-relaxed">{description}</p>
       <div className="mt-4 pt-2 border-t border-border flex-grow flex items-end">
         <div className="focus-within-visible">
-          <a href="#" className="text-sm font-medium text-carp-blue flex items-center">
+          <Link to={linkTo} className="text-sm font-medium text-carp-blue flex items-center">
             Learn more 
             <svg className="ml-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
@@ -113,6 +116,7 @@ const Features = () => {
             description="Connect with verified users from your college or workplace for a trusted ridesharing experience."
             icon={Users}
             color="bg-purple-500"
+            linkTo="/features/community"
             delay={100}
           />
           
@@ -121,6 +125,7 @@ const Features = () => {
             description="Real-time tracking, driver verification, and emergency contact features ensure peace of mind."
             icon={Shield}
             color="bg-green-500" 
+            linkTo="/features/safety"
             delay={200}
           />
           
@@ -129,6 +134,7 @@ const Features = () => {
             description="Our intelligent matching algorithm finds the most efficient routes and compatible co-riders."
             icon={MapPin}
             color="bg-carp-blue"
+            linkTo="/features/routing"
             delay={300}
           />
           
@@ -137,6 +143,7 @@ const Features = () => {
             description="Coordinate easily with drivers and co-riders through our secure messaging system."
             icon={MessageSquare}
             color="bg-orange-500"
+            linkTo="/features/chat"
             delay={400}
           />
         </div>
