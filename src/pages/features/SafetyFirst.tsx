@@ -5,6 +5,8 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Shield, UserCheck, Bell, MapPin } from 'lucide-react';
+import CallToAction from '@/components/CallToAction';
+
 
 const SafetyFirst = () => {
   const [verificationStep, setVerificationStep] = useState(1);
@@ -489,24 +491,8 @@ const SafetyFirst = () => {
       </section>
       
       {/* CTA Section */}
-      <section className="py-20 px-6 bg-gradient-to-b from-green-50 to-background">
-        <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Safety you can trust, journeys you can enjoy
-          </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-10">
-            Join the thousands of users who travel with peace of mind every day with Carp's industry-leading safety features.
-          </p>
-          <Button
-            size="lg"
-            className="bg-green-600 hover:bg-green-700 text-white"
-            onClick={() => document.getElementById('download')?.scrollIntoView({ behavior: 'smooth' })}
-          >
-            Download Carp Now
-          </Button>
-        </div>
-      </section>
       
+      <CallToAction />
       <Footer />
     </div>
   );

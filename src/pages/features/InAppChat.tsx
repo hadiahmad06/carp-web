@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { MessageSquare, Send, Image, Smile, Mic, Clock, Phone } from 'lucide-react';
+import CallToAction from '@/components/CallToAction';
 
 const InAppChat = () => {
   const [isAppVisible, setIsAppVisible] = useState(false);
@@ -410,25 +411,7 @@ const InAppChat = () => {
         </div>
       </section>
       
-      {/* CTA Section */}
-      <section className="py-20 px-6">
-        <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Connect with your community on the road
-          </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-10">
-            Join thousands of users who are building connections, coordinating rides, and making memories with Carp's in-app chat.
-          </p>
-          <Button
-            size="lg"
-            className="bg-orange-600 hover:bg-orange-700 text-white"
-            onClick={() => document.getElementById('download')?.scrollIntoView({ behavior: 'smooth' })}
-          >
-            Download Carp Now
-          </Button>
-        </div>
-      </section>
-      
+      <CallToAction />
       <Footer />
     </div>
   );

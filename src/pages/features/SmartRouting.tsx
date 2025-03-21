@@ -5,6 +5,8 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { MapPin, Route, Clock, TrendingUp, Users } from 'lucide-react';
+import CallToAction from '@/components/CallToAction';
+
 
 const SmartRouting = () => {
   const [isAppVisible, setIsAppVisible] = useState(false);
@@ -585,6 +587,7 @@ const SmartRouting = () => {
         </div>
       </section>
       
+      <CallToAction />
       <Footer />
     </div>
   );

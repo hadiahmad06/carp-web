@@ -64,7 +64,8 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
         carp: {
-          blue: "#0EA5E9",
+		  blue: "#6495ED",
+        //   blue: "#0EA5E9",
           lightBlue: "#E0F2FE",
           dark: "#1A1F2C",
           gray: "#8E9196",
