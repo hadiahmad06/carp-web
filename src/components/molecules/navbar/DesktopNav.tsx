@@ -20,7 +20,15 @@ const DesktopNav = ({ isScrolled }: DesktopNavProps) => {
           isOpen={isFeatureMenuOpen} 
           setIsOpen={setIsFeatureMenuOpen} 
         />
-        
+         <SectionNav
+          className={cn(
+            "font-medium transition-colors link-underline",
+            isScrolled ? "text-foreground" : "text-foreground"
+          )}
+          nav="/"
+          section="fare-breakdown"
+          text="Fare Breakdown"
+        />
         <SectionNav
           className={cn(
             "font-medium transition-colors link-underline",
