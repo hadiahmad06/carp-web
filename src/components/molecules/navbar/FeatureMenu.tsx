@@ -53,14 +53,6 @@ const FeatureMenu = ({ isScrolled, isOpen, setIsOpen }: FeatureMenuProps) => {
         onMouseLeave={() => setIsOpen(false)}
       >
         <div className="flex flex-col space-y-3">
-          <Link to="/features/community" className="text-foreground hover:text-carp-blue transition-colors flex items-center gap-2 text-sm">
-            <span className="w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center">
-              <svg className="w-4 h-4 text-purple-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-              </svg>
-            </span>
-            Community Driven
-          </Link>
           <Link to="/features/safety" className="text-foreground hover:text-carp-blue transition-colors flex items-center gap-2 text-sm">
             <span className="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center">
               <svg className="w-4 h-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -84,6 +76,14 @@ const FeatureMenu = ({ isScrolled, isOpen, setIsOpen }: FeatureMenuProps) => {
               </svg>
             </span>
             In-app Chat
+          </Link>
+          <Link to="/features/community" className="text-foreground hover:text-carp-blue transition-colors flex items-center gap-2 text-sm">
+            <span className="w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center">
+              <svg className="w-4 h-4 text-purple-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+            </span>
+            Community Driven
           </Link>
         </div>
       </div>

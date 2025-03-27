@@ -40,9 +40,6 @@ const MobileMenu = ({
       >
         <div className="flex flex-col items-center justify-center h-full space-y-8">
           <div className="flex flex-col items-center space-y-6">
-            <Link to="/features/community" className="font-medium text-xl text-foreground" onClick={closeMobileMenu}>
-              Community Driven
-            </Link>
             <Link to="/features/safety" className="font-medium text-xl text-foreground" onClick={closeMobileMenu}>
               Safety First
             </Link>
@@ -51,6 +48,9 @@ const MobileMenu = ({
             </Link>
             <Link to="/features/chat" className="font-medium text-xl text-foreground" onClick={closeMobileMenu}>
               In-app Chat
+            </Link>
+            <Link to="/features/community" className="font-medium text-xl text-foreground" onClick={closeMobileMenu}>
+              Community Driven
             </Link>
           </div>
           {['How it works', 'Testimonials'].map((item) => (

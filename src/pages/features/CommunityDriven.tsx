@@ -13,52 +13,28 @@ import CallToAction from '@/components/organisms/CallToAction';
 const communityEvents = [
   {
     id: 1,
-    title: "Taylor Swift: The Eras Tour",
-    location: "Levi's Stadium, Santa Clara",
-    date: "July 28-29, 2023",
-    attendees: 23,
-    image: "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+    title: "Nettspend",
+    location: "Varsity Theater, Minneapolis",
+    date: "Mar 27, 2025",
+    attendees: 65,
+    image: "https://s1.ticketm.net/dam/a/fea/c42e4eff-96bf-42cd-b782-ff9f8e811fea_RETINA_PORTRAIT_3_2.jpg"
   },
   {
     id: 2,
-    title: "Coldplay: Music of the Spheres",
-    location: "Rose Bowl, Pasadena",
-    date: "September 30, 2023",
+    title: "Franz Ferdinand",
+    location: "Fillmore Minneapolis",
+    date: "Apr 4, 2025",
+    attendees: 14,
+    image: "https://s1.ticketm.net/dam/a/3df/3cf40085-ff9c-49ab-927f-48bc27b4e3df_RETINA_PORTRAIT_3_2.jpg"
+  },
+  {
+    id: 2,
+    title: "Charli XCX - BRAT 2025",
+    location: "Target Center, Minneapolis",
+    date: "Apr 26, 2025",
     attendees: 17,
-    image: "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+    image: "https://prismic-images.tmol.io/ticketmaster-tm-global/43265267-ca5b-413c-bd9a-557c886593bb_charli+xcx+v1.jpg"
   },
-  {
-    id: 3,
-    title: "Bad Bunny: World's Hottest Tour",
-    location: "SoFi Stadium, Los Angeles",
-    date: "October 14, 2023",
-    attendees: 19,
-    image: "https://images.unsplash.com/photo-1506157786151-b8491531f063?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
-  },
-  {
-    id: 4, 
-    title: "Beyoncé: Renaissance World Tour",
-    location: "MetLife Stadium, New Jersey",
-    date: "July 29-30, 2023",
-    attendees: 28,
-    image: "https://images.unsplash.com/photo-1518609878373-06d740f60d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
-  },
-  {
-    id: 5,
-    title: "Kendrick Lamar: The Big Steppers Tour",
-    location: "TD Garden, Boston",
-    date: "August 10, 2023",
-    attendees: 15,
-    image: "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
-  },
-  {
-    id: 6,
-    title: "BTS: Yet To Come",
-    location: "Allegiant Stadium, Las Vegas",
-    date: "September 15, 2023",
-    attendees: 32,
-    image: "https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
-  }
 ];
 
 // Mock data for success stories
@@ -331,10 +307,10 @@ const CommunityDriven = () => {
                 <CardContent className="p-6">
                   <h3 className="font-bold text-xl mb-2 group-hover:text-purple-600 transition-colors">{story.title}</h3>
                   <p className="text-muted-foreground">{story.story}</p>
-                  <div className="mt-4 flex items-center text-purple-600">
+                  {/* <div className="mt-4 flex items-center text-purple-600">
                     <Heart className="w-4 h-4 mr-2" />
                     <span className="text-sm font-medium">Read full story</span>
-                  </div>
+                  </div> */}
                 </CardContent>
               </Card>
             ))}

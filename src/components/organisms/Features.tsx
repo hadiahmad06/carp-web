@@ -103,7 +103,7 @@ const Features = () => {
             Why Choose Carp?
           </div>
           <h2 className="font-bold mb-4">
-            Features designed to make <br /> ridesharing <span className="text-carp-blue">effortless</span>
+            Features designed to make <br />  <span className="text-carp-blue">effortless</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Our thoughtfully crafted features ensure your journey is convenient, safe, and sociable
@@ -111,14 +111,6 @@ const Features = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <FeatureCard
-            title="Community Driven"
-            description="Connect with verified users from your college or workplace for a trusted ridesharing experience."
-            icon={Users}
-            color="bg-purple-500"
-            linkTo="/features/community"
-            delay={100}
-          />
           
           <FeatureCard
             title="Safety First"
@@ -126,24 +118,33 @@ const Features = () => {
             icon={Shield}
             color="bg-green-500" 
             linkTo="/features/safety"
-            delay={200}
+            delay={100}
           />
           
           <FeatureCard
             title="Smart Routing"
-            description="Our intelligent matching algorithm finds the most efficient routes and compatible co-riders."
+            description="Our intelligent matching algorithm finds the most efficient routes and compatible riders."
             icon={MapPin}
             color="bg-carp-blue"
             linkTo="/features/routing"
-            delay={300}
+            delay={200}
           />
           
           <FeatureCard
             title="In-app Chat"
-            description="Coordinate easily with drivers and co-riders through our secure messaging system."
+            description="Coordinate easily with drivers and riders through our secure messaging system."
             icon={MessageSquare}
             color="bg-orange-500"
             linkTo="/features/chat"
+            delay={300}
+          />
+
+          <FeatureCard
+            title="Community Driven"
+            description="Connect with verified users from your college or workplace for a trusted ridesharing experience."
+            icon={Users}
+            color="bg-purple-500"
+            linkTo="/features/community"
             delay={400}
           />
         </div>

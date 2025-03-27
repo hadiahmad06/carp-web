@@ -130,9 +130,9 @@ const Hero = () => {
                     
                     {/* Ride cards */}
                     {[
-                      { name: 'Sarah K.', from: 'Downtown', to: 'University', time: '8:30 AM', price: '$4.50' },
-                      { name: 'Michael R.', from: 'Westside', to: 'City Center', time: '9:15 AM', price: '$5.25' },
-                      { name: 'David L.', from: 'Northville', to: 'Tech Park', time: '10:00 AM', price: '$3.75' }
+                      { name: 'Bruce C.', from: 'Plymouth, MN', to: 'East Bank', time: '8:29 AM', eta: '8:57 PM' },
+                      { name: 'Jessica M.', from: 'US Bank Stadium', to: 'Huntington Bank Stadium', time: '9:12 AM', eta: '9:28 PM' },
+                      { name: 'Hadi A.', from: 'Burnsville Transit Station', to: 'Palace Theatre, St. Paul', time: '6:12 PM', eta: '6:48 PM' }
                     ].map((ride, i) => (
                       <div key={i} className="p-3 mb-3 bg-white rounded-xl shadow-sm border border-gray-100 flex items-center relative animate-fade-in" style={{ animationDelay: `${500 + i * 100}ms` }}>
                         <div className="w-10 h-10 rounded-full bg-carp-blue/10 flex items-center justify-center">
@@ -141,7 +141,7 @@ const Hero = () => {
                         <div className="ml-3 flex-1">
                           <div className="flex items-center justify-between">
                             <span className="font-medium text-sm">{ride.name}</span>
-                            <span className="font-semibold text-carp-blue">{ride.price}</span>
+                            <span className="font-semibold text-carp-blue">{ride.eta}</span>
                           </div>
                           <div className="flex items-center mt-1">
                             <div className="text-2xs text-muted-foreground">
