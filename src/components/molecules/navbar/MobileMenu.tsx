@@ -1,6 +1,6 @@
 
 import { cn } from '@/lib/utils';
-import { Button } from '@/components/ui/button';
+import { Button } from '@/components/atoms/button';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 

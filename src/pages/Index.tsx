@@ -1,12 +1,12 @@
 
 import { useEffect } from 'react';
-import Navbar from '@/components/Navbar';
-import Hero from '@/components/Hero';
-import Features from '@/components/Features';
-import HowItWorks from '@/components/HowItWorks';
-import Testimonials from '@/components/Testimonials';
-import CallToAction from '@/components/CallToAction';
-import Footer from '@/components/Footer';
+import Navbar from '@/components/organisms/Navbar';
+import Hero from '@/components/organisms/Hero';
+import Features from '@/components/organisms/Features';
+import HowItWorks from '@/components/organisms/HowItWorks';
+import Testimonials from '@/components/organisms/Testimonials';
+import CallToAction from '@/components/organisms/CallToAction';
+import Footer from '@/components/organisms/Footer';
 import { initScrollAnimations } from '@/utils/scrollAnimation';
 
 const Index = () => {

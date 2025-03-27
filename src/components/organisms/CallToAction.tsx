@@ -1,6 +1,6 @@
 
 import { useEffect, useRef } from 'react';
-import { Button } from '@/components/ui/button';
+import { Button } from '@/components/atoms/button';
 import { Apple, Smartphone } from 'lucide-react';
 
 const CallToAction = () => {

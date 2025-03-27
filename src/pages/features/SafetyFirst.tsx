@@ -1,11 +1,11 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import { Button } from '@/components/ui/button';
+import Navbar from '@/components/organisms/Navbar';
+import Footer from '@/components/organisms/Footer';
+import { Button } from '@/components/atoms/button';
 import { Shield, UserCheck, Bell, MapPin } from 'lucide-react';
-import CallToAction from '@/components/CallToAction';
+import CallToAction from '@/components/organisms/CallToAction';
 
 
 const SafetyFirst = () => {

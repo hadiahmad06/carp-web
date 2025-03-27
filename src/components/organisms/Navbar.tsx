@@ -2,9 +2,9 @@
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { useIsMobile } from '@/hooks/use-mobile';
-import Logo from './navbar/Logo';
-import DesktopNav from './navbar/DesktopNav';
-import MobileMenu from './navbar/MobileMenu';
+import Logo from '../molecules/navbar/Logo';
+import DesktopNav from '../molecules/navbar/DesktopNav';
+import MobileMenu from '../molecules/navbar/MobileMenu';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);

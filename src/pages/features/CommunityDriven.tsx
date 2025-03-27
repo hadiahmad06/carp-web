@@ -1,12 +1,12 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import { Button } from '@/components/ui/button';
+import Navbar from '@/components/organisms/Navbar';
+import Footer from '@/components/organisms/Footer';
+import { Button } from '@/components/atoms/button';
 import { Users, Music, Star, Heart } from 'lucide-react';
-import { Card, CardContent } from '@/components/ui/card';
-import CallToAction from '@/components/CallToAction';
+import { Card, CardContent } from '@/components/atoms/card';
+import CallToAction from '@/components/organisms/CallToAction';
 
 
 // Mock data for community events

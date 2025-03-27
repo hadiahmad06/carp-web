@@ -1,7 +1,8 @@
 import { useEffect, useRef } from 'react';
-import { Button } from '@/components/ui/button';
+import { Button } from '@/components/atoms/button';
 import { User, MapPin, Car } from 'lucide-react';
-import { FloatingUI, FloatingUIContainer } from '@/components/ui/floating-ui';
+import { FloatingUI, FloatingUIContainer } from '@/components/atoms/floating-ui';
+import SectionNav from '../molecules/NavButtons';
 
 const Hero = () => {
   const parallaxRef = useRef<HTMLDivElement>(null);
@@ -33,19 +34,25 @@ const Hero = () => {
           <div className="w-full lg:w-1/2 space-y-8 text-center lg:text-left">
             <div className="space-y-3">
               <div className="inline-block bg-carp-lightBlue text-carp-blue rounded-full px-4 py-1 font-medium animate-fade-in">
-                Ride sharing made simple
+                Where the journey matters more than the destination.
               </div>
               <h1 className="font-bold animate-fade-in" style={{ animationDelay: '100ms' }}>
                 Share rides, <br />
                 <span className="text-carp-blue">save money</span>, make friends
               </h1>
               <p className="text-xl text-muted-foreground animate-fade-in" style={{ animationDelay: '200ms' }}>
-                Connect with fellow travelers going your way. <br className="hidden md:block" />
+                Carpool with <span className="font-semibold">Carp</span> today <br className="hidden md:block" />
                 Make commuting affordable, sustainable, and social.
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4 animate-fade-in" style={{ animationDelay: '300ms' }}>
+              {/* <SectionNav
+                className="w-full sm:w-auto bg-carp-blue hover:bg-carp-blue/90 text-white py-2.5 px-6 rounded-md text-center"
+                nav="/"
+                section="download"
+                text="Download App"
+              /> */}
               <Button 
                 size="lg" 
                 className="w-full sm:w-auto bg-carp-blue hover:bg-carp-blue/90 text-white"
@@ -55,14 +62,15 @@ const Hero = () => {
               </Button>
               <Button 
                 variant="outline" 
-                size="lg" 
+                size="lg"
                 className="w-full sm:w-auto border-2 border-carp-blue text-foreground hover:bg-carp-blue hover:text-white"
+                onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Learn More
               </Button>
             </div>
 
-            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-2 sm:space-y-0 animate-fade-in" style={{ animationDelay: '400ms' }}>
+            {/* <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-2 sm:space-y-0 animate-fade-in" style={{ animationDelay: '400ms' }}>
               <div className="flex -space-x-2">
                 {[1, 2, 3, 4].map((i) => (
                   <div 
@@ -76,7 +84,7 @@ const Hero = () => {
               <div className="sm:ml-4 text-sm text-muted-foreground">
                 <span className="font-medium">1000+</span> rides shared this week
               </div>
-            </div>
+            </div> */}
           </div>
           {/* Right column / Visual content */}
           <div className="w-full lg:w-1/2 relative">
@@ -213,9 +221,7 @@ const Hero = () => {
                 />
               </FloatingUIContainer>
             </div>
-            
           </div>
-          
         </div>
       </div>
     </section>
