@@ -25,8 +25,8 @@ const DesktopNav = ({ isScrolled }: DesktopNavProps) => {
             "font-medium transition-colors link-underline",
             isScrolled ? "text-foreground" : "text-foreground"
           )}
-          nav="/"
-          section="fare-breakdown"
+          nav="/fare-breakdown"
+          section=""
           text="Fare Breakdown"
         />
         <SectionNav
