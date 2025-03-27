@@ -2,6 +2,7 @@
 import { useEffect } from 'react';
 import Navbar from '@/components/organisms/Navbar';
 import Hero from '@/components/organisms/Hero';
+import FareOverview from '@/components/organisms/FareOverview';
 import Features from '@/components/organisms/Features';
 import HowItWorks from '@/components/organisms/HowItWorks';
 import Testimonials from '@/components/organisms/Testimonials';
@@ -44,6 +45,7 @@ const Index = () => {
     <div className="min-h-screen overflow-x-hidden bg-background">
       <Navbar />
       <Hero />
+      <FareOverview />
       <Features />
       <HowItWorks />
       <Testimonials />

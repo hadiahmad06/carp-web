@@ -10,8 +10,8 @@ import CommunityDriven from "./pages/features/CommunityDriven";
 import SafetyFirst from "./pages/features/SafetyFirst";
 import SmartRouting from "./pages/features/SmartRouting";
 import InAppChat from "./pages/features/InAppChat";
+import FareBreakdown from "./pages/FareBreakdown";
 import ScrollToHash from "./components/molecules/ScrollToHash";
-import { Scroll } from "lucide-react";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +28,7 @@ const App = () => (
           <Route path="/features/safety" element={<SafetyFirst />} />
           <Route path="/features/routing" element={<SmartRouting />} />
           <Route path="/features/chat" element={<InAppChat />} />
+          <Route path="/fare-breakdown" element={<FareBreakdown />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
