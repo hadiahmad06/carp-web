@@ -4,14 +4,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Carp</title>
+    <title>Carp - Smarter Carpooling for Students and Professionals</title>
     <meta name="description" content="Connecting roads, connecting people. Find, share, and manage rides today on Carp! Share rides, save money, make friends." />
     <meta name="author" content="Carp Team" />
+    <meta name="keywords" content="carpooling, rideshare, college, university, commute, sustainable transport, ride sharing" />
+    <meta name="theme-color" content="#0EA5E9" />
+    
+    <!-- Open Graph / Social Media Meta Tags -->
     <meta property="og:title" content="Carp – Smarter Carpooling" />
     <meta property="og:description" content="Connecting roads, connecting people. Find, share, and manage rides today on Carp! Share rides, save money, make friends." />
-    <meta property="og:image" content="https://carp.lol/og-image.jpg" />
+    <meta property="og:image" content="https://carp.lol/og-image.webp" />
     <meta property="og:url" content="https://carp.lol" />
     <meta property="og:type" content="website" />
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Carp – Smarter Carpooling" />
+    <meta name="twitter:description" content="Find, share, and manage rides today on Carp! Share rides, save money, make friends." />
+    <meta name="twitter:image" content="https://carp.lol/og-image.webp" />
+    
+    <!-- Preload critical CSS -->
+    <link rel="preload" href="/src/index.css" as="style" />
+    
+    <!-- Preload key assets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+    
+    <!-- Canonical link -->
+    <link rel="canonical" href="https://carp.lol" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   </head>
 
   <body>
@@ -19,5 +43,25 @@
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Structured data for better SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Carp",
+        "alternateName": "Carp Carpooling",
+        "url": "https://carp.lol",
+        "logo": "https://carp.lol/logo.webp",
+        "description": "Connecting roads, connecting people. Find, share, and manage rides today on Carp! Share rides, save money, make friends.",
+        "applicationCategory": "Transportation",
+        "operatingSystem": "iOS, Android",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    </script>
   </body>
 </html>

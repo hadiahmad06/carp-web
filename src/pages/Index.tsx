@@ -9,10 +9,11 @@ import Testimonials from '@/components/organisms/Testimonials';
 import CallToAction from '@/components/organisms/CallToAction';
 import Footer from '@/components/organisms/Footer';
 import { initScrollAnimations } from '@/utils/scrollAnimation';
+import { Helmet } from 'react-helmet-async';
 
 const Index = () => {
   useEffect(() => {
-    // Initialize scroll animations
+    // Initialize scroll animations with performance optimization
     const cleanup = initScrollAnimations();
     
     // Smooth scroll for anchor links
@@ -29,6 +30,9 @@ const Index = () => {
             top: targetElement.getBoundingClientRect().top + window.scrollY - 100,
             behavior: 'smooth'
           });
+          
+          // Update URL without causing a page reload
+          history.pushState(null, '', anchor.hash);
         }
       }
     };
@@ -43,6 +47,10 @@ const Index = () => {
 
   return (
     <div className="min-h-screen overflow-x-hidden bg-background">
+      <Helmet>
+        <title>Carp - Smarter Carpooling for Students and Professionals</title>
+        <meta name="description" content="Connecting roads, connecting people. Find, share, and manage rides with Carp! Save money on commutes and make new connections." />
+      </Helmet>
       <Navbar />
       <Hero />
       <FareOverview />
