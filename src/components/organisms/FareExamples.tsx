@@ -49,12 +49,12 @@ const FareExamples = () => {
                     <div className="p-4 border-b border-border bg-muted/50">
                       <div className="flex justify-between items-center">
                         <div>
-                          <p className="font-medium">Campus to Downtown</p>
-                          <p className="text-sm text-muted-foreground">10 miles, 2 passengers</p>
+                          <p className="font-medium">East Bank to South Bloomington</p>
+                          <p className="text-sm text-muted-foreground">25 miles, 2 passengers</p>
                         </div>
                         <div className="text-right">
                           <p className="text-sm text-muted-foreground">Departing in 25 mins</p>
-                          <p className="text-xs text-muted-foreground">John D. • ★ 4.8</p>
+                          <p className="text-xs text-muted-foreground">Hadi A. ★ 4.8</p>
                         </div>
                       </div>
                     </div>
@@ -62,13 +62,13 @@ const FareExamples = () => {
                     <div className="p-5 space-y-4">
                       <div className="flex items-center justify-between">
                         <span className="text-sm text-muted-foreground">Your fare</span>
-                        <span className="text-xl font-bold text-carp-blue">$4.50</span>
+                        <span className="text-xl font-bold text-carp-blue">$4.75</span>
                       </div>
                       
                       <div className="pt-2 border-t border-border">
                         <div className="flex justify-between text-sm">
                           <span>Driver's set price</span>
-                          <span>$4.50 per rider</span>
+                          <span>$4.75 per rider</span>
                         </div>
                         <div className="flex justify-between text-sm">
                           <span>Recommended price</span>
@@ -99,12 +99,12 @@ const FareExamples = () => {
                     <div className="p-4 border-b border-border bg-muted/50">
                       <div className="flex justify-between items-center">
                         <div>
-                          <p className="font-medium">Suburban Area to Airport</p>
+                          <p className="font-medium">East Plymouth to Valleyfair</p>
                           <p className="text-sm text-muted-foreground">25 miles, 3 passengers</p>
                         </div>
                         <div className="text-right">
                           <p className="text-sm text-muted-foreground">Departing tomorrow</p>
-                          <p className="text-xs text-muted-foreground">Sarah M. • ★ 4.6</p>
+                          <p className="text-xs text-muted-foreground">Bruce C. ★ 4.6</p>
                         </div>
                       </div>
                     </div>
@@ -156,22 +156,22 @@ const FareExamples = () => {
                   <CardContent className="p-0">
                     <div className="p-4 border-b border-border bg-muted/50">
                       <p className="font-medium">Set Your Price</p>
-                      <p className="text-sm text-muted-foreground">Downtown to Stadium Lot</p>
+                      <p className="text-sm text-muted-foreground">Woodbury High School to Eagan YMCA</p>
                     </div>
                     
                     <div className="p-5 space-y-4">
                       <div className="space-y-1">
                         <div className="flex items-center justify-between">
                           <span className="text-sm font-medium">Recommended Price</span>
-                          <span className="font-bold text-carp-blue">$6.00 per rider</span>
+                          <span className="font-bold text-carp-blue">$6.52</span>
                         </div>
                         <p className="text-xs text-muted-foreground">Based on 12 miles, 28 MPG, $3.55/gal gas, $5 parking</p>
                       </div>
                       
                       <div className="p-4 bg-muted rounded-lg">
                         <div className="mb-2">
-                          <span className="text-sm font-medium">You've set the price at:</span>
-                          <div className="text-2xl font-bold text-carp-blue">$6.00 per rider</div>
+                          <span className="text-sm font-medium">You've set the trip cost at:</span>
+                          <div className="text-2xl font-bold text-carp-blue">$6.52</div>
                         </div>
                         
                         <div className="flex items-center text-sm text-green-600">
@@ -182,12 +182,12 @@ const FareExamples = () => {
                       
                       <div className="pt-2 border-t border-border space-y-2">
                         <div className="flex justify-between text-sm">
-                          <span>Total Trip Cost:</span>
-                          <span className="font-medium">$18.00</span>
+                          <span>With 1 rider:</span>
+                          <span className="font-medium">$3.26 per head</span>
                         </div>
                         <div className="flex justify-between text-sm">
-                          <span>With 3 passengers:</span>
-                          <span className="font-medium">$18.00 total</span>
+                          <span>With 2 riders:</span>
+                          <span className="font-medium">$2.17 per head</span>
                         </div>
                       </div>
                     </div>
@@ -208,22 +208,22 @@ const FareExamples = () => {
                   <CardContent className="p-0">
                     <div className="p-4 border-b border-border bg-muted/50">
                       <p className="font-medium">Set Your Price</p>
-                      <p className="text-sm text-muted-foreground">South Campus to Concert Venue</p>
+                      <p className="text-sm text-muted-foreground">UMN-TC to UW-Madison</p>
                     </div>
                     
                     <div className="p-5 space-y-4">
                       <div className="space-y-1">
                         <div className="flex items-center justify-between">
                           <span className="text-sm font-medium">Recommended Price</span>
-                          <span className="font-bold text-carp-blue">$7.25 per rider</span>
+                          <span className="font-bold text-carp-blue">$31.13</span>
                         </div>
-                        <p className="text-xs text-muted-foreground">Based on 15 miles, 25 MPG, $3.50/gal gas, $8 parking</p>
+                        <p className="text-xs text-muted-foreground">Based on 266.38 miles, 30 MPG, $3.50/gal gas</p>
                       </div>
                       
                       <div className="p-4 bg-muted rounded-lg">
                         <div className="mb-2">
-                          <span className="text-sm font-medium">You've set the price at:</span>
-                          <div className="text-2xl font-bold text-amber-600">$9.50 per rider</div>
+                          <span className="text-sm font-medium">You've set the trip cost at:</span>
+                          <div className="text-2xl font-bold text-amber-600">$40.46</div>
                         </div>
                         
                         <div className="flex items-start text-sm text-amber-600">
@@ -241,12 +241,12 @@ const FareExamples = () => {
                       
                       <div className="pt-2 border-t border-border space-y-2">
                         <div className="flex justify-between text-sm">
-                          <span>Total Trip Cost:</span>
-                          <span className="font-medium">$28.50</span>
+                          <span>With 1 rider:</span>
+                          <span className="font-medium">$20.23 per head</span>
                         </div>
                         <div className="flex justify-between text-sm">
-                          <span>With 3 passengers:</span>
-                          <span className="font-medium">$28.50 total</span>
+                          <span>With 2 riders:</span>
+                          <span className="font-medium">$13.49 per head</span>
                         </div>
                       </div>
                     </div>
@@ -267,22 +267,22 @@ const FareExamples = () => {
                   <CardContent className="p-0">
                     <div className="p-4 border-b border-border bg-muted/50">
                       <p className="font-medium">Set Your Price</p>
-                      <p className="text-sm text-muted-foreground">Dorm to Shopping Center</p>
+                      <p className="text-sm text-muted-foreground">East Bank to Palace Theatre, St. Paul</p>
                     </div>
                     
                     <div className="p-5 space-y-4">
                       <div className="space-y-1">
                         <div className="flex items-center justify-between">
                           <span className="text-sm font-medium">Recommended Price</span>
-                          <span className="font-bold text-carp-blue">$3.75 per rider</span>
+                          <span className="font-bold text-carp-blue">$11.06</span>
                         </div>
-                        <p className="text-xs text-muted-foreground">Based on 7 miles, 30 MPG, $3.45/gal gas, $4 parking</p>
+                        <p className="text-xs text-muted-foreground">Based on 7.7 miles, 25 MPG, $3.45/gal gas, $10 parking</p>
                       </div>
                       
                       <div className="p-4 bg-muted rounded-lg">
                         <div className="mb-2">
-                          <span className="text-sm font-medium">You've set the price at:</span>
-                          <div className="text-2xl font-bold text-blue-600">$3.00 per rider</div>
+                          <span className="text-sm font-medium">You've set the trip cost at:</span>
+                          <div className="text-2xl font-bold text-blue-600">$8.85</div>
                         </div>
                         
                         <div className="flex items-start text-sm text-blue-600">
@@ -300,12 +300,12 @@ const FareExamples = () => {
                       
                       <div className="pt-2 border-t border-border space-y-2">
                         <div className="flex justify-between text-sm">
-                          <span>Total Trip Cost:</span>
-                          <span className="font-medium">$9.00</span>
+                          <span>With 1 rider:</span>
+                          <span className="font-medium">$4.43 per head</span>
                         </div>
                         <div className="flex justify-between text-sm">
-                          <span>With 3 passengers:</span>
-                          <span className="font-medium">$9.00 total</span>
+                          <span>With 2 riders:</span>
+                          <span className="font-medium">$2.95 per head</span>
                         </div>
                         <div className="flex justify-between text-sm text-blue-600">
                           <span>Calculation gap:</span>
