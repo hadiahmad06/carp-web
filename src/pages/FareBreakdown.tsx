@@ -5,6 +5,7 @@ import FareExamples from '@/components/organisms/FareExamples';
 import { Alert, AlertDescription, AlertTitle } from '@/components/atoms/alert';
 import { Card, CardContent } from '@/components/atoms/card';
 import { Info, DollarSign, Calculator, BarChart3 } from 'lucide-react';
+import CallToAction from '@/components/organisms/CallToAction';
 
 const FareBreakdown = () => {
   return (
@@ -200,7 +201,7 @@ const FareBreakdown = () => {
         {/* Examples section */}
         <FareExamples />
       </main>
-      
+      <CallToAction />
       <Footer />
     </div>
   );
