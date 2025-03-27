@@ -65,7 +65,8 @@ export default {
 				},
         carp: {
 		  blue: "#6495ED",
-        //   blue: "#0EA5E9",
+		//   darker blue: "#488AC7",
+        //   oldblue: "#0EA5E9",
           lightBlue: "#E0F2FE",
           dark: "#1A1F2C",
           gray: "#8E9196",
