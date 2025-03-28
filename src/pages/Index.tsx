@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import Navbar from '@/components/organisms/Navbar';
 import Hero from '@/components/organisms/Hero';
 import FareOverview from '@/components/organisms/FareOverview';
+import RideMatchingOverview from '@/components/organisms/RideMatchingOverview';
 import Features from '@/components/organisms/Features';
 import HowItWorks from '@/components/organisms/HowItWorks';
 import Testimonials from '@/components/organisms/Testimonials';
@@ -54,6 +55,7 @@ const Index = () => {
       <Navbar />
       <Hero />
       <FareOverview />
+      <RideMatchingOverview />
       <Features />
       <HowItWorks />
       <Testimonials />

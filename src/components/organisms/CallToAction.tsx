@@ -2,6 +2,7 @@
 import { useEffect, useRef } from 'react';
 import { Button } from '@/components/atoms/button';
 import { Apple, Smartphone } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const CallToAction = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -54,27 +55,31 @@ const CallToAction = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                size="lg" 
-                className="bg-carp-dark hover:bg-black text-white flex items-center gap-2"
-              >
-                <Apple className="h-5 w-5" />
-                <div className="flex flex-col items-start">
-                  <span className="text-xs">Download on the</span>
-                  <span className="font-semibold">App Store</span>
-                </div>
-              </Button>
+              <Link to="/beta-program">
+                <Button 
+                  size="lg" 
+                  className="bg-carp-dark hover:bg-black text-white flex items-center gap-2"
+                >
+                  <Apple className="h-5 w-5" />
+                  <div className="flex flex-col items-start">
+                    <span className="text-xs">Download on the</span>
+                    <span className="font-semibold">App Store</span>
+                  </div>
+                </Button>
+              </Link>
               
-              <Button 
-                size="lg" 
-                className="bg-carp-dark hover:bg-black text-white flex items-center gap-2"
-              >
-                <Smartphone className="h-5 w-5" />
-                <div className="flex flex-col items-start">
-                  <span className="text-xs">GET IT ON</span>
-                  <span className="font-semibold">Google Play</span>
-                </div>
-              </Button>
+              <Link to="/beta-program">
+                <Button 
+                  size="lg" 
+                  className="bg-carp-dark hover:bg-black text-white flex items-center gap-2"
+                >
+                  <Smartphone className="h-5 w-5" />
+                  <div className="flex flex-col items-start">
+                    <span className="text-xs">GET IT ON</span>
+                    <span className="font-semibold">Google Play</span>
+                  </div>
+                </Button>
+              </Link>
             </div>
           </div>
           

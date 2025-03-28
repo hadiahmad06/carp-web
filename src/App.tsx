@@ -18,6 +18,8 @@ const SafetyFirst = lazy(() => import("./pages/features/SafetyFirst"));
 const SmartRouting = lazy(() => import("./pages/features/SmartRouting"));
 const InAppChat = lazy(() => import("./pages/features/InAppChat"));
 const FareBreakdown = lazy(() => import("./pages/FareBreakdown"));
+const RideMatching = lazy(() => import("./pages/RideMatching"));
+const BetaProgram = lazy(() => import("./pages/BetaProgram"));
 
 // Loading fallback component
 const PageLoader = () => (
@@ -70,6 +72,16 @@ const App = () => (
           <Route path="/fare-breakdown" element={
             <Suspense fallback={<PageLoader />}>
               <FareBreakdown />
+            </Suspense>
+          } />
+          <Route path="/ride-matching" element={
+            <Suspense fallback={<PageLoader />}>
+              <RideMatching />
+            </Suspense>
+          } />
+          <Route path="/beta-program" element={
+            <Suspense fallback={<PageLoader />}>
+              <BetaProgram />
             </Suspense>
           } />
           <Route path="*" element={

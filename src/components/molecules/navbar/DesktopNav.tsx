@@ -4,6 +4,7 @@ import { Button } from '@/components/atoms/button';
 import FeatureMenu from './FeatureMenu';
 import { useState } from 'react';
 import SectionNav from '../NavButtons';
+import { Link } from 'react-router-dom';
 
 interface DesktopNavProps {
   isScrolled: boolean;
@@ -34,6 +35,15 @@ const DesktopNav = ({ isScrolled }: DesktopNavProps) => {
             "font-medium transition-colors link-underline",
             isScrolled ? "text-foreground" : "text-foreground"
           )}
+          nav="/ride-matching"
+          section=""
+          text="Ride Matching"
+        />
+        <SectionNav
+          className={cn(
+            "font-medium transition-colors link-underline",
+            isScrolled ? "text-foreground" : "text-foreground"
+          )}
           nav="/"
           section="how-it-works"
           text="How it works"
@@ -47,28 +57,16 @@ const DesktopNav = ({ isScrolled }: DesktopNavProps) => {
           section="testimonials"
           text="Testimonials"
         />
-
-        {/* {['How it works', 'Testimonials'].map((item) => (
-          <a
-            key={item}
-            href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}
-            className={cn(
-              "font-medium transition-colors link-underline",
-              isScrolled ? "text-foreground" : "text-foreground"
-            )}
-          >
-            {item}
-          </a>
-        ))} */}
       </nav>
 
       <div className="hidden md:flex items-center space-x-4">
-        <Button 
-          className="font-medium bg-carp-blue hover:bg-carp-blue/90 text-white"
-          onClick={() => document.getElementById('download')?.scrollIntoView({ behavior: 'smooth' })}
-        >
-          Download
-        </Button>
+        <Link to="/beta-program">
+          <Button 
+            className="font-medium bg-carp-blue hover:bg-carp-blue/90 text-white"
+          >
+            Download
+          </Button>
+        </Link>
       </div>
     </>
   );

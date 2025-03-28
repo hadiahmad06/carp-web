@@ -52,7 +52,14 @@ const MobileMenu = ({
             <Link to="/features/community" className="font-medium text-xl text-foreground" onClick={closeMobileMenu}>
               Community Driven
             </Link>
+            <Link to="/fare-breakdown" className="font-medium text-xl text-foreground" onClick={closeMobileMenu}>
+              Fare Breakdown
+            </Link>
+            <Link to="/ride-matching" className="font-medium text-xl text-foreground" onClick={closeMobileMenu}>
+              Ride Matching
+            </Link>
           </div>
+          
           {['How it works', 'Testimonials'].map((item) => (
             <a
               key={item}
@@ -63,6 +70,7 @@ const MobileMenu = ({
               {item}
             </a>
           ))}
+          
           <div className="flex flex-col space-y-4 pt-8">
             <Button 
               variant="outline" 
@@ -70,15 +78,13 @@ const MobileMenu = ({
             >
               Log in
             </Button>
-            <Button 
-              className="font-medium text-lg w-48 bg-carp-blue hover:bg-carp-blue/90 text-white"
-              onClick={() => {
-                closeMobileMenu();
-                document.getElementById('download')?.scrollIntoView({ behavior: 'smooth' });
-              }}
-            >
-              Download
-            </Button>
+            <Link to="/beta-program" onClick={closeMobileMenu}>
+              <Button 
+                className="font-medium text-lg w-48 bg-carp-blue hover:bg-carp-blue/90 text-white"
+              >
+                Download
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
