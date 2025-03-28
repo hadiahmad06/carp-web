@@ -23,7 +23,7 @@ const DesktopNav = ({ isScrolled }: DesktopNavProps) => {
         />
          <SectionNav
           className={cn(
-            "font-medium transition-colors link-underline",
+            "font-medium transition-colors link-underline text-foreground",
             isScrolled ? "text-foreground" : "text-foreground"
           )}
           nav="/fare-breakdown"
@@ -32,7 +32,7 @@ const DesktopNav = ({ isScrolled }: DesktopNavProps) => {
         />
         <SectionNav
           className={cn(
-            "font-medium transition-colors link-underline",
+            "font-medium transition-colors link-underline text-foreground",
             isScrolled ? "text-foreground" : "text-foreground"
           )}
           nav="/ride-matching"
