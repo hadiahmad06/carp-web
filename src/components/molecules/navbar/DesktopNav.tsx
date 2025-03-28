@@ -39,24 +39,6 @@ const DesktopNav = ({ isScrolled }: DesktopNavProps) => {
           section=""
           text="Ride Matching"
         />
-        <SectionNav
-          className={cn(
-            "font-medium transition-colors link-underline",
-            isScrolled ? "text-foreground" : "text-foreground"
-          )}
-          nav="/"
-          section="how-it-works"
-          text="How it works"
-        />
-        <SectionNav
-          className={cn(
-            "font-medium transition-colors link-underline",
-            isScrolled ? "text-foreground" : "text-foreground"
-          )}
-          nav="/"
-          section="testimonials"
-          text="Testimonials"
-        />
       </nav>
 
       <div className="hidden md:flex items-center space-x-4">
