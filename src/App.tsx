@@ -42,9 +42,9 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
+      <Analytics />
       <BrowserRouter basename="/">
         <ScrollToHash />
-        <Analytics />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/features/community" element={
