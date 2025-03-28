@@ -43,10 +43,10 @@ const CallToAction = () => {
       >
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-2/3 mb-10 md:mb-0 md:pr-12">
-            <div className="inline-block bg-carp-lightBlue text-carp-blue rounded-full px-4 py-1 font-medium mb-4">
+            <div className="inline-block bg-carp-lightBlue text-carp-blue rounded-full px-4 py-1 font-medium mb-4 dark:bg-blue-900/50 dark:text-blue-400">
               Ready to start carpooling?
             </div>
-            <h2 className="font-bold text-3xl md:text-4xl mb-6">
+            <h2 className="font-bold text-3xl md:text-4xl mb-6 text-foreground">
               Download Carp and start <br className="hidden md:block" />
               saving today
             </h2>
@@ -58,7 +58,7 @@ const CallToAction = () => {
               <Link to="/beta-program">
                 <Button 
                   size="lg" 
-                  className="bg-carp-dark hover:bg-black text-white flex items-center gap-2"
+                  className="bg-carp-dark hover:bg-black text-white flex items-center gap-2 dark:bg-gray-800 dark:hover:bg-gray-900"
                 >
                   <Apple className="h-5 w-5" />
                   <div className="flex flex-col items-start">
@@ -71,7 +71,7 @@ const CallToAction = () => {
               <Link to="/beta-program">
                 <Button 
                   size="lg" 
-                  className="bg-carp-dark hover:bg-black text-white flex items-center gap-2"
+                  className="bg-carp-dark hover:bg-black text-white flex items-center gap-2 dark:bg-gray-800 dark:hover:bg-gray-900"
                 >
                   <Smartphone className="h-5 w-5" />
                   <div className="flex flex-col items-start">
@@ -85,9 +85,9 @@ const CallToAction = () => {
           
           <div className="md:w-1/3 relative">
             <div className="aspect-square max-w-[300px] mx-auto">
-              <div className="absolute inset-0 bg-gradient-radial from-carp-lightBlue to-transparent opacity-60 animate-pulse-light"></div>
+              <div className="absolute inset-0 bg-gradient-radial from-carp-lightBlue to-transparent dark:from-blue-900/30 dark:to-transparent opacity-60 animate-pulse-light"></div>
               <div className="relative w-full h-full p-6">
-                <div className="relative w-full h-full rounded-[38px] overflow-hidden border-8 border-black shadow-2xl">
+                <div className="relative w-full h-full rounded-[38px] overflow-hidden border-8 border-black dark:border-gray-800 shadow-2xl">
                   {/* App preview image */}
                   <img 
                     src="https://images.unsplash.com/photo-1551650975-87deedd944c3" 
@@ -104,7 +104,7 @@ const CallToAction = () => {
                         <span className="text-white text-xs">↓</span>
                       </div>
                       <div className="ml-2">
-                        <div className="font-medium text-xs">Easy download</div>
+                        <div className="font-medium text-xs text-foreground">Easy download</div>
                       </div>
                     </div>
                   </div>
@@ -117,7 +117,7 @@ const CallToAction = () => {
                         <span className="text-white text-xs">★</span>
                       </div>
                       <div className="ml-2">
-                        <div className="font-medium text-xs">Top rated</div>
+                        <div className="font-medium text-xs text-foreground">Top rated</div>
                       </div>
                     </div>
                   </div>

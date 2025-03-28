@@ -7,7 +7,7 @@ import './index.css'
 // Create a performance mark for monitoring initial load
 performance.mark('app-start');
 
-// Check if user prefers dark mode
+// Set initial color mode based on user preference
 const setInitialColorMode = () => {
   // Check if dark mode is preferred
   if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
