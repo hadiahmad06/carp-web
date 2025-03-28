@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/atoms/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToHash from "./components/molecules/ScrollToHash";
+import { Analytics } from "@vercel/analytics/react"
 
 // Eagerly load the Index page for faster initial load
 import Index from "./pages/Index";
@@ -43,6 +44,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter basename="/">
         <ScrollToHash />
+        <Analytics />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/features/community" element={
