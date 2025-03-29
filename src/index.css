@@ -62,7 +62,7 @@
     --secondary-foreground: 210 40% 98%;
 
     --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted-foreground: 215 20.2% 75.1%;
 
     --accent: 217.2 32.6% 17.5%;
     --accent-foreground: 210 40% 98%;
@@ -139,5 +139,22 @@
   
   .parallax {
     @apply will-change-transform;
+  }
+
+  /* Mobile app preview styles for dark mode */
+  .dark .mobile-app-preview {
+    @apply bg-gray-900 border-gray-700;
+  }
+  
+  .dark .mobile-app-preview-screen {
+    @apply bg-gradient-to-b from-gray-800 to-gray-900;
+  }
+  
+  .dark .mobile-app-preview-content {
+    @apply text-gray-200;
+  }
+  
+  .dark .mobile-app-input {
+    @apply bg-gray-800 border-gray-700;
   }
 }

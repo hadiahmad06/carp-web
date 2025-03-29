@@ -99,11 +99,11 @@ const Features = () => {
       
       <div className="container mx-auto max-w-7xl">
         <div ref={titleRef} className="text-center mb-16 scroll-animation">
-          <div className="inline-block bg-carp-lightBlue text-carp-blue rounded-full px-4 py-1 font-medium mb-4 dark:bg-blue-900/50 dark:text-blue-400">
+          <div className="inline-block bg-carp-lightBlue text-carp-blue rounded-full px-4 py-1 font-medium mb-4 dark:bg-blue-900/50 dark:text-blue-300">
             Why Choose Carp?
           </div>
           <h2 className="font-bold mb-4 text-foreground">
-            Features designed to make <br />  <span className="text-carp-blue">effortless</span>
+            Features designed to make <br /> driving together <span className="text-carp-blue dark:text-blue-300">effortless</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Our thoughtfully crafted features ensure your journey is convenient, safe, and sociable

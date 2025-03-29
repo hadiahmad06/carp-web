@@ -3,27 +3,18 @@ import { createRoot } from 'react-dom/client'
 import { HelmetProvider } from 'react-helmet-async';
 import App from './App.tsx'
 import './index.css'
+import { themeConfig } from './config/theme.ts'
 
 // Create a performance mark for monitoring initial load
 performance.mark('app-start');
 
-// Set initial color mode based on user preference
+// Set initial color mode based on configuration
 const setInitialColorMode = () => {
-  // Check if dark mode is preferred
-  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  if (themeConfig.enableDarkMode) {
     document.documentElement.classList.add('dark');
   } else {
     document.documentElement.classList.remove('dark');
   }
-  
-  // Listen for changes in color scheme preference
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-    if (e.matches) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-  });
 };
 
 // Set initial color mode before rendering
