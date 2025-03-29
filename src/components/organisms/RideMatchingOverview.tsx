@@ -46,7 +46,7 @@ const RideMatchingOverview = () => {
             <div className="inline-block bg-carp-lightBlue text-carp-blue rounded-full px-4 py-1 font-medium mb-4 dark:bg-blue-900/50">
               Smart Technology
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-carp-blue to-blue-500 bg-clip-text text-transparent">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
               Intelligent Ride Matching
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -59,11 +59,11 @@ const RideMatchingOverview = () => {
               <div className="lg:col-span-3">
                 <div className="space-y-6">
                   <div className="flex gap-4">
-                    <div className="w-12 h-12 bg-carp-lightBlue dark:bg-blue-900/50 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 dark:bg-blue-900/50">
                       <TargetIcon className="h-6 w-6 text-carp-blue dark:text-blue-400" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold mb-2 text-carp-blue dark:text-blue-400">Efficiency-First Algorithm</h3>
+                      <h3 className="text-xl font-semibold mb-2 text-foreground">Efficiency-First Algorithm</h3>
                       <p className="text-muted-foreground">
                         Our proprietary system analyzes hundreds of variables to connect riders with drivers along optimal routes, minimizing detours and maximizing time savings.
                       </p>
@@ -71,11 +71,11 @@ const RideMatchingOverview = () => {
                   </div>
                   
                   <div className="flex gap-4">
-                    <div className="w-12 h-12 bg-carp-lightBlue dark:bg-blue-900/50 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <MapPin className="h-6 w-6 text-carp-blue dark:text-blue-400" />
+                    <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0 dark:bg-green-900/50">
+                      <MapPin className="h-6 w-6 text-green-600 dark:text-green-400" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold mb-2 text-carp-blue dark:text-blue-400">Smart Route Planning</h3>
+                      <h3 className="text-xl font-semibold mb-2 text-foreground">Smart Route Planning</h3>
                       <p className="text-muted-foreground">
                         Tell us your vehicle details, starting point, and destination. We'll find riders along your route with minimal added drive time.
                       </p>
@@ -83,11 +83,11 @@ const RideMatchingOverview = () => {
                   </div>
                   
                   <div className="flex gap-4">
-                    <div className="w-12 h-12 bg-carp-lightBlue dark:bg-blue-900/50 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Zap className="h-6 w-6 text-carp-blue dark:text-blue-400" />
+                    <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0 dark:bg-orange-900/50">
+                      <Zap className="h-6 w-6 text-orange-600 dark:text-orange-400" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold mb-2 text-carp-blue dark:text-blue-400">Real-Time Adjustments</h3>
+                      <h3 className="text-xl font-semibold mb-2 text-foreground">Real-Time Adjustments</h3>
                       <p className="text-muted-foreground">
                         Our system continuously optimizes matches even as new riders join, ensuring the most efficient carpooling experience for everyone.
                       </p>
@@ -113,7 +113,7 @@ const RideMatchingOverview = () => {
                   {/* Floating elements */}
                   <div className="absolute top-1/4 left-1/4 animate-float">
                     <div className="glass-effect p-3 rounded-xl shadow-lg border border-carp-blue/30">
-                      <div className="text-xs font-medium text-carp-blue dark:text-blue-400">
+                      <div className="text-xs font-medium text-foreground">
                         <span className="text-green-600 dark:text-green-400">+</span> Time Efficiency
                       </div>
                     </div>
@@ -121,7 +121,7 @@ const RideMatchingOverview = () => {
                   
                   <div className="absolute bottom-1/3 right-1/4 animate-float" style={{ animationDelay: '1s' }}>
                     <div className="glass-effect p-3 rounded-xl shadow-lg border border-carp-blue/30">
-                      <div className="text-xs font-medium text-carp-blue dark:text-blue-400">
+                      <div className="text-xs font-medium text-foreground">
                         <span className="text-red-600 dark:text-red-400">-</span> Carbon Emissions
                       </div>
                     </div>
@@ -129,7 +129,7 @@ const RideMatchingOverview = () => {
                   
                   <div className="absolute bottom-1/4 left-1/3 animate-float" style={{ animationDelay: '1.5s' }}>
                     <div className="glass-effect p-3 rounded-xl shadow-lg border border-carp-blue/30">
-                      <div className="text-xs font-medium text-carp-blue dark:text-blue-400">
+                      <div className="text-xs font-medium text-foreground">
                         <span className="text-green-600 dark:text-green-400">+</span> Optimal Routes
                       </div>
                     </div>
