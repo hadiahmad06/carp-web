@@ -157,27 +157,4 @@
   .dark .mobile-app-input {
     @apply bg-gray-800 border-gray-700;
   }
-  
-  /* Typing cursor animation */
-  @keyframes typing-cursor-blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
-  }
-  
-  .typing-cursor {
-    animation: typing-cursor-blink 1s step-end infinite;
-  }
-  
-  /* Improved dark mode gradients */
-  .dark-gradient-subtle {
-    @apply dark:bg-gradient-to-b dark:from-gray-900 dark:to-gray-900/50;
-  }
-  
-  .card-gradient {
-    @apply bg-white dark:bg-gray-800/90 dark:border-gray-700;
-  }
-  
-  .feature-gradient {
-    @apply bg-gradient-to-b from-white to-blue-50/30 dark:from-gray-900 dark:to-blue-950/5;
-  }
 }

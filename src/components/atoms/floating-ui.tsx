@@ -1,6 +1,4 @@
-
 import React from "react";
-import { cn } from "@/lib/utils";
 
 type FloatingUIProps = {
   title: string;
@@ -12,7 +10,6 @@ type FloatingUIProps = {
   animationDuration?: string;
   xOffset?: string;
   yOffset?: string;
-  className?: string;
 };
 
 const FloatingUI: React.FC<FloatingUIProps> = ({
@@ -25,11 +22,10 @@ const FloatingUI: React.FC<FloatingUIProps> = ({
   animationDuration = "3s",
   xOffset = "0px",
   yOffset = "0px",
-  className = "",
 }) => {
   return (
     <div
-      className={cn("animate-float", className)}
+      className="animate-float"
       style={{
         animationDelay,
         animationDuration,
@@ -58,8 +54,7 @@ const FloatingUIContainer: React.FC<{
   xOffset?: string;
   yOffset?: string;
   children: React.ReactNode;
-  className?: string;
-}> = ({ position, xOffset = "0px", yOffset = "0px", children, className = "" }) => {
+}> = ({ position, xOffset = "0px", yOffset = "0px", children }) => {
   const positionClasses = {
     "top-left": "top-[20%] left-0",
     "top-right": "top-[20%] right-0",
@@ -74,7 +69,7 @@ const FloatingUIContainer: React.FC<{
 
   return (
     <div
-      className={cn(`absolute ${positionClasses[position]} flex flex-col space-y-4 justify-center items-center`, className)}
+      className={`absolute ${positionClasses[position]} flex flex-col space-y-4 justify-center items-center`}
       style={{
         transform: `translate(${xOffset}, ${yOffset})`,
       }}
