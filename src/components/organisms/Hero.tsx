@@ -35,7 +35,7 @@ const Hero = () => {
           <div className="w-full lg:w-1/2 space-y-8 text-center lg:text-left">
             <div className="space-y-3">
               <div className="inline-block bg-carp-lightBlue text-carp-blue rounded-full px-4 py-1 font-medium animate-fade-in dark:bg-blue-900/50">
-                Connecting roads, Connecting people.
+                Where the journey matters more than the destination.
               </div>
               <h1 className="font-bold animate-fade-in text-foreground" style={{ animationDelay: '100ms' }}>
                 Share rides, <br />
