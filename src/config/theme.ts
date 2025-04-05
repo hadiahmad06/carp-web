@@ -5,5 +5,5 @@
  */
 export const themeConfig = {
   // Set to true to enable dark mode, false to disable it
-  enableDarkMode: false,
+  enableDarkMode: true,
 };
