@@ -86,13 +86,13 @@ const CallToAction = () => {
           <div className="md:w-1/3 relative">
             <div className="aspect-square max-w-[300px] mx-auto">
               <div className="absolute inset-0 bg-gradient-radial from-carp-lightBlue to-transparent dark:from-blue-900/30 dark:to-transparent opacity-60 animate-pulse-light"></div>
-              <div className="relative w-full h-full p-6">
-                <div className="relative w-full h-full rounded-[38px] overflow-hidden border-8 border-black dark:border-gray-800 shadow-2xl">
+                <div className="relative w-full h-full p-6">
+                  <div className="relative w-full h-full rounded-[38px] overflow-hidden border-8 border-black dark:border-gray-800 shadow-2xl bg-gray-100 dark:bg-gray-900 flex items-center justify-center">
                   {/* App preview image */}
                   <img 
-                    src="https://images.unsplash.com/photo-1551650975-87deedd944c3" 
+                    src="/logo_full.svg" 
                     alt="Carp App Preview" 
-                    className="w-full h-full object-cover"
+                    className="max-w-[80%] max-h-[80%] object-contain"
                   />
                 </div>
                 

@@ -74,11 +74,12 @@ const Hero = () => {
                 <div className="relative h-full bg-gradient-to-b from-blue-50 to-white dark:from-gray-800 dark:to-gray-900 flex flex-col">
                   {/* App header */}
                   <div className="p-5 flex items-center justify-between">
-                    <div className="flex items-center gap-2">
-                      <div className="h-8 w-8 rounded-lg bg-carp-blue flex items-center justify-center">
-                        <span className="text-white font-medium text-base">C</span>
-                      </div>
-                      <span className="font-semibold text-xl text-foreground">carp</span>
+                    <div className="flex items-center gap-1 mb-6">
+                      <img
+                        src="/logo.svg"
+                        alt="Carp Logo"
+                        className="h-12 w-12"
+                      />
                     </div>
                     <div className="w-8 h-8 rounded-full bg-black/5 dark:bg-white/10 flex items-center justify-center">
                       <User size={18} className="text-foreground" />

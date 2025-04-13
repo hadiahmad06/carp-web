@@ -7,11 +7,15 @@ const Footer = () => {
       <div className="container mx-auto max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           <div className="col-span-1">
-            <div className="flex items-center gap-2 mb-6">
-              <div className="h-10 w-10 rounded-lg bg-carp-blue flex items-center justify-center">
-                <span className="text-white font-medium text-xl">C</span>
-              </div>
-              <span className="font-semibold text-2xl text-white">carp</span>
+            <div className="flex items-center gap-1 mb-6">
+              <img
+                src="/logo.svg"
+                alt="Carp Logo"
+                className="h-16 w-16"
+              />
+              <span className="text-4xl font-fredoka font-bold tracking-wider text-carp-blue">
+                CARP
+              </span>
             </div>
             <p className="text-sm text-gray-400 mb-6">
               Carp is revolutionizing the way students and professionals commute by making ridesharing simple, affordable, and social.
